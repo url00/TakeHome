@@ -1,0 +1,11 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+
+@foreach (var result in Model.CommandCheckingResults)
+{
+    <div>@result</div>
+}
